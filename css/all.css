@@ -1,0 +1,267 @@
+.wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.top {
+    height: 30px;
+    background-color: #f6f6f6;
+}
+
+.top ul {
+    float: right;
+}
+
+.top ul li:nth-child(1) {
+    border-right: 2px solid #cccccc;
+    padding-right: 8px;
+}
+
+.top li a {
+    text-decoration: none;
+}
+
+.top li img {
+    margin-right: 5px;
+    /* 對img做float可以將文字與圖片對齊*/
+    float: left;
+}
+
+.top ul li {
+    float: left;
+    margin: 5px;
+}
+
+.header {
+    height: 40px;
+}
+
+.header h1 {
+    /* 使選單可以float上來*/
+    display: inline-block;
+}
+
+.header h1 a {
+    /*使用背景圖片代替h1顯示作法*/
+    display: inline-block;
+    background-image: url('../img/hexlogo.png');
+    background-repeat: none;
+    width: 171px;
+    height: 51px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header > ul {
+    float: right;
+}
+
+.header >ul> li {
+    float: left;
+    margin: 15px;
+    color: #00cc98;
+}
+
+.fb_style {
+    color: #4460a0;
+}
+
+.twitter_style {
+    color: #44c0ff;
+}
+
+
+/*當選單被hover的時候有下底線*/
+
+.header ul li a {
+    text-decoration: none;
+    color: #08ce9c;
+}
+
+.header ul li a:hover {
+    /* border-bottom: solid 4px #08ce9c; */
+    padding-bottom: 12px;
+}
+
+.banner {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+.content > ul > li {
+    /*為了讓他這３個區塊都長一樣大小一開始先限定長寬*/
+    width: 320px;
+    /* height: 400px; */
+    float: left;
+    border: solid 1px #f1f1f1;
+    border-radius: 6px;
+    box-shadow: 1px 19px 20px -20px;
+    rgba(0,
+    0,
+    0,
+    0.2);
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* content下第一個li */
+
+.content ul li:nth-child(2) {
+    margin-right: calc(40px/2);
+    margin-left: calc(40px/2);
+}
+
+.content ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.content ul li h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.content ul li p {
+    font-size: 14px;
+    padding: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.onlineWord {
+    /* display: block; */
+    font-size: 20px;
+    /* margin-top: 100px; */
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.classContent table {
+    width: 100%;
+}
+
+.classContent table tr:hover {
+    background-color: gray;
+}
+
+.classContent table th,
+.classContent table td {
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 1px #dddddd;
+    padding: 20px;
+}
+
+.classContent table th {
+    text-align: left;
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.lightGColor {
+    color: #00cc98;
+}
+
+.info {
+    margin-top: 100px;
+    background-image: url('../img/bgImg.png');
+    background-repeat: repeat-x;
+    height: 405px;
+}
+
+.info > p {
+    padding-top: 30px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.info form {
+    margin-top: 30px;
+}
+
+.info textarea {
+    float: left;
+    /* 不可以讓他伸縮 */
+    resize: none;
+    margin-left: 20px;
+}
+
+.infoList {
+    width: 448px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+/* 為了讓他們可以自己一列 */
+
+.infoList label,
+.infoList input {
+    display: block;
+}
+
+.infoList label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.infoList input {
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+    height: 30px;
+}
+
+#submitBtn {
+    color: white;
+    width: 70px;
+    float: right;
+    background-color: #00cc99;
+    border: 0px;
+    user-select: none;
+}
+
+#submitBtn:hover {
+    border-style: inset;
+    border: solid 1px #025742;
+    font-size: 16px;
+    background-color: red;
+}
+
+#submitBtn:hover,
+#submitBtn:active {
+    border-style: inset;
+    border: solid 1px #025742;
+    font-size: 16px;
+}
+
+#submitBtn {
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.gototop img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.product_open {
+    display: none;
+}

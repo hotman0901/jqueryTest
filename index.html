@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="第一次做網站">
+    <meta name="keyword" content="作業一">
+    <meta http-equiv="X-UA-Compatiable" content="IE-Edge">
+    <!-- facebook設定-->
+    <meta property="og:title" content="第一個網站">
+    <meta property="og:description" content="第一個網站">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tw.yahoo.com/">
+    <meta property="og:image" content="img/html5.png">
+    <title>作業一</title>
+    <!-- slider-start -->
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/nivoslider/default/default.css">
+    <!-- slider-end -->
+    <!-- lightbox-start -->
+    <link rel="stylesheet" type="text/css" href="css/lightbox/lightbox.min.css">
+    <!-- lightbox-end -->
+    <link rel="stylesheet" type="text/css" href="css/cssreset.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="shoirtcut icon" href="img/favicon.ico">
+    <script src="js/jquery.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- top -->
+        <div class="top">
+            <ul>
+                <li>
+                    <a href="#"><img src="img/facebooklogo.png" alt="facebook">
+                        <span class="fb_style">粉絲團</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="img/twitterlogo.png" alt="twitter">
+                        <span class="twitter_style">聯絡我們</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- header -->
+        <div class="header">
+            <h1>
+                <a href="#">Hex School</a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#">首頁</a>
+                </li>
+                <li>
+                    <a href="#" class="product">產品介紹</a>
+                    <ul class="product_open">
+                        <li><a href="#">上衣穿著</a></li>
+                        <li><a href="#">下身穿著</a></li>
+                        <li><a href="#">配件穿著</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">聯絡我們</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 背景圖 -->
+        <div class="banner">
+            <!-- nivoslider 必須外面加上theme-default -->
+            <div class="theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="img/slider/toystory.jpg" alt="" data-transition="boxRainGrowReverse" />
+                    <a href="http://tw.yahoo.com">
+                        <img src="img/slider/up.jpg" alt="" title="This is an yahoo url" data-transition="boxRandom" />
+                    </a>
+                    <img src="img/slider/walle.jpg" alt="" data-transition="slideInLeft" />
+                </div>
+            </div>
+        </div>
+        <!-- 內容 -->
+        <div class="content">
+            <ul>
+                <li>
+                    <!-- data-title參數是在點擊的時候會顯示在下方的文字
+                    data-lightbox參數是若是要同一個輪播群組就要設定相同名稱 -->
+                    <a href="img/html5.png" data-lightbox="roadtrip" data-title="html5 基礎教學">
+                        <img src="img/html5.png">
+                        <h2>html5 基礎教學</h2>
+                        <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，暸解正確的網站開發流程。講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="img/responsive.png" data-lightbox="roadtrip" data-title="響應式網站設計">
+                        <img src="img/responsive.png">
+                        <h2>響應式網站設計</h2>
+                        <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發的方法，讓學生暸解行動版開發技巧。
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="img/jquery.png" data-lightbox="roadtrip" data-title="Jquery 實戰教學">
+                        <img src="img/jquery.png">
+                        <h2>Jquery 實戰教學</h2>
+                        <p>本課程有以下特色
+                            <br> ·暸解變數的使用方式
+                            <br> ·學習並操作DOM
+                            <br> ·學習基本數學運算方式
+                            <br> ·套件的操作及運用
+                        </p>
+                    </a>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <!-- 線上及實體課程的差異 -->
+        <h2 class="onlineWord">線上及實體課程的差異</h2>
+        <div class="classContent">
+            <table>
+                <tr>
+                    <th>項目</th>
+                    <th>Hex School線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>實體課程</th>
+                </tr>
+                <tr>
+                    <td>費用</td>
+                    <td class="lightGColor">較低</td>
+                    <td class="lightGColor">較低</td>
+                    <td class="none">較高</td>
+                </tr>
+                <tr>
+                    <td>學習效果</td>
+                    <td class="none">一般</td>
+                    <td class="lightGColor">較低</td>
+                    <td class="lightGColor">很好</td>
+                </tr>
+                <tr>
+                    <td>Code review</td>
+                    <td class="lightGColor">有</td>
+                    <td class="none">無</td>
+                    <td class="none">不一定</td>
+                </tr>
+                <tr>
+                    <td>課程更新速度</td>
+                    <td class="lightGColor">普通</td>
+                    <td class="lightGColor">普通</td>
+                    <td class="none">較慢</td>
+                </tr>
+                <tr>
+                    <td>多次複習</td>
+                    <td class="lightGColor">可</td>
+                    <td class="none">可</td>
+                    <td class="none">不可</td>
+                </tr>
+                <tr>
+                    <td>字幕</td>
+                    <td class="lightGColor">有</td>
+                    <td class="none">不一定</td>
+                    <td class="none">板書</td>
+                </tr>
+            </table>
+        </div>
+        <!-- 留下資料 -->
+        <div class="info">
+            <p>對我們課程有興趣嗎</p>
+            <p>歡迎留下您的資料</p>
+            <form>
+                <textarea cols="72" rows="15"></textarea>
+                <div class="infoList" action="index.html">
+                    <label for="name">姓名</label>
+                    <input type="input" name="name" id="name" placeholder="六角講師">
+                    <label for="phone">電話</label>
+                    <input type="mail" name="phone" id="phone" placeholder="0921345678">
+                    <label for="mail">信箱</label>
+                    <input type="input" name="mail" id="mail" placeholder="hexschool@mail.com">
+                    <input type="submit" value="送出" id="submitBtn" onclick="ok();">
+                </div>
+            </form>
+        </div>
+        <!-- footer資訊內的style試著將直接寫在html內 -->
+        <div class="footer" style="margin-top: 30px;">
+            <img src="img/hexlogo_gray.png" style="float: left; ">
+            <div class="contact" style="float: right; margin-bottom: 50px">
+                <span>聯絡我們：</span><span style="color: #ed81b3;">hexschool@gmail.com</span>
+                <br>
+                <div class="phone" style="margin-top: 10px">
+                    <span>電話：</span><span style="color: #ed81b3;">0999999999</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 跑到最上效果 -->
+    <div class="gototop">
+        <a href="#"><img src="img/goTop.png" alt="gototop"></a>
+    </div>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+</body>
+
+</html>
